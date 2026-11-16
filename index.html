@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151310">
+  <meta name="description" content="The Courage to LOVE is a free five-day email experience for moms who want to feel closer to their teenage daughters. Begins December 1, 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Courage to LOVE | A Free 5-Day Email Experience">
+  <meta property="og:description" content="When talking to your teenage daughter feels harder than it used to. Join Kristin for five days of simple, practical communication tools. Starts December 1, 2026.">
+  <title>The Courage to LOVE | Free 5-Day Email Experience | My Organic Soulution</title>
+  <style>
+    :root {
+      --black:#000000;
+      --night:#151310;
+      --gold:#A98351;
+      --gold-light:#D1B181;
+      --cream:#F6F2E7;
+      --paper:#FFFCF5;
+      --ink:#251F19;
+      --text-light:#E8DFD1;
+      --stroke:rgba(169,131,81,.34);
+    }
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--cream); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+    a:focus-visible,button:focus-visible,input:focus-visible { outline:3px solid var(--gold); outline-offset:4px; }
+    .shell { width:min(1160px,calc(100% - 72px)); margin-inline:auto; }
+    .serif,h1,h2,h3,.wordmark { font-family:Georgia,"Times New Roman",serif; font-weight:400; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.22em; font-size:11px; font-weight:800; }
+    .topbar { background:var(--night); border-bottom:1px solid rgba(246,242,231,.12); color:var(--cream); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:18px; min-height:93px; }
+    .brand { display:inline-flex; align-items:center; gap:14px; text-decoration:none; font-size:12px; font-weight:700; letter-spacing:.16em; line-height:1.45; }
+    .brand-mark { width:40px; height:40px; flex:none; }
+    .nav-right { display:flex; align-items:center; gap:29px; }
+    .nav-note { color:#CAB89E; font-size:10px; font-weight:750; letter-spacing:.19em; text-transform:uppercase; }
+    .nav-link { padding:10px 0; text-decoration:none; color:var(--cream); font-size:13px; font-weight:700; border-bottom:1px solid var(--gold); white-space:nowrap; }
+    .nav-link:hover { color:var(--gold-light); }
+
+    .hero { overflow:hidden; position:relative; isolation:isolate; background:var(--night); color:var(--cream); }
+    .hero::before { content:""; position:absolute; z-index:-1; pointer-events:none; top:-300px; left:calc(50% - 30px); width:840px; height:840px; border-radius:50%; border:1px solid rgba(169,131,81,.16); box-shadow:0 0 0 87px rgba(169,131,81,.025),0 0 0 184px rgba(169,131,81,.018); }
+    .hero::after { content:""; position:absolute; z-index:-1; pointer-events:none; bottom:-280px; left:-250px; width:510px; height:510px; border:1px solid rgba(169,131,81,.13); border-radius:50%; }
+    .starfield { position:absolute; top:42px; right:10%; width:430px; height:320px; z-index:-1; opacity:.5; pointer-events:none; }
+    .hero-grid { display:grid; grid-template-columns:minmax(0,1.06fr) minmax(345px,.88fr); align-items:center; gap:clamp(36px,7vw,112px); padding-block:clamp(84px,9vw,132px) clamp(88px,9vw,130px); }
+    .rule-label { display:flex; align-items:center; gap:15px; color:var(--gold-light); }
+    .rule-label::before { content:""; display:block; width:36px; height:1px; background:var(--gold); flex:none; }
+    h1 { font-size:clamp(47px,5.9vw,76px); line-height:1.065; letter-spacing:-.053em; max-width:660px; margin:27px 0 27px; }
+    h1 em { font-weight:400; font-style:italic; color:var(--gold-light); }
+    .lede { color:var(--text-light); font-size:18px; line-height:1.85; max-width:550px; margin:0 0 19px; }
+    .lede + .lede { margin-bottom:31px; }
+    .hero-cta { display:inline-flex; align-items:center; gap:15px; padding:15px 0; color:var(--cream); font-weight:700; font-size:14px; text-decoration:none; border-bottom:1px solid var(--gold); }
+    .hero-cta svg { transition:transform .2s ease; }
+    .hero-cta:hover svg { transform:translateX(5px); }
+    .date-line { display:flex; align-items:center; gap:11px; margin:27px 0 0; color:#D3C3AF; font-size:12px; line-height:1.5; font-weight:600; letter-spacing:.03em; }
+    .date-line .spark { color:var(--gold-light); font-size:15px; }
+
+    .signup { background:var(--cream); color:var(--ink); border:1px solid var(--gold); padding:clamp(28px,3.6vw,47px); box-shadow:13px 13px 0 rgba(169,131,81,.13); }
+    .signup-kicker { color:#76532E; margin:0 0 15px; }
+    .signup h2 { font-size:clamp(32px,3.1vw,41px); line-height:1.13; letter-spacing:-.032em; margin:0 0 16px; }
+    .signup-intro { font-size:15px; line-height:1.75; color:#564838; margin:0 0 24px; }
+    .start-chip { border-block:1px solid #D2C6B4; padding:15px 0; margin-bottom:23px; display:flex; justify-content:space-between; align-items:center; gap:13px; }
+    .start-chip span { text-transform:uppercase; font-size:10px; font-weight:800; letter-spacing:.15em; color:#76532E; }
+    .start-chip strong { font-size:13px; font-weight:750; text-align:right; }
+    .kit-embed { min-height:94px; }
+    /* Kit generates the actual fields and submit button. Style its output; do not duplicate fields in this file. */
+    .kit-embed .formkit-form { max-width:none !important; width:100% !important; min-width:0 !important; margin:0 !important; padding:0 !important; border:0 !important; background:transparent !important; box-shadow:none !important; color:var(--ink) !important; font-family:inherit !important; }
+    .kit-embed .formkit-fields,.kit-embed .formkit-field,.kit-embed .formkit-field-wrap { width:100% !important; max-width:none !important; }
+    .kit-embed .formkit-fields { display:flex !important; flex-direction:column !important; gap:13px !important; }
+    .kit-embed input:not([type="hidden"]),.kit-embed .formkit-input { width:100% !important; min-height:52px !important; padding:11px 14px !important; border:1px solid #B9AA94 !important; border-radius:0 !important; background:var(--paper) !important; color:var(--ink) !important; font:inherit !important; box-shadow:none !important; }
+    .kit-embed input::placeholder { color:#827667 !important; opacity:1; }
+    .kit-embed button,.kit-embed .formkit-submit { width:100% !important; min-height:55px !important; display:flex !important; align-items:center !important; justify-content:center !important; padding:13px 17px !important; border:1px solid var(--night) !important; border-radius:0 !important; background:var(--night) !important; color:var(--cream) !important; font-family:inherit !important; font-size:13px !important; font-weight:760 !important; cursor:pointer !important; }
+    .kit-embed button:hover,.kit-embed .formkit-submit:hover { background:#31271E !important; }
+    .kit-embed button:focus-visible,.kit-embed input:focus-visible,.kit-embed .formkit-submit:focus-visible { outline:3px solid var(--gold) !important; outline-offset:3px !important; }
+    .kit-embed .formkit-alert,.kit-embed .formkit-guarantee,.kit-embed .formkit-powered-by-convertkit-container { font-size:12px !important; line-height:1.55 !important; }
+    /* A small, high-contrast enrollment reminder and link to the real Kit form below. */
+    .signup-highlight { background:#EEE1CA; border-left:4px solid var(--gold); padding:17px 19px 16px; margin:0 0 24px; }
+    .signup-highlight p { margin:0; color:#403226; font-size:14px; line-height:1.65; }
+    .signup-highlight strong { font-weight:800; color:#2D2116; }
+    .signup-highlight .signup-deadline { font-weight:750; }
+    .signup-jump { display:inline-flex; align-items:center; gap:7px; margin-top:11px; color:#68471F; font-size:13px; font-weight:800; text-decoration:underline; text-decoration-color:var(--gold); text-underline-offset:4px; }
+    .signup-jump:hover { color:var(--black); }
+    #love-signup-form { scroll-margin-top:28px; }
+
+    .section { padding-block:clamp(74px,9vw,112px); }
+    .section-head { max-width:760px; margin-bottom:40px; }
+    .section-head .eyebrow { color:#78552F; margin:0 0 14px; }
+    .section-head h2 { font-size:clamp(35px,4.6vw,55px); line-height:1.15; letter-spacing:-.038em; margin:0 0 18px; }
+    .section-head p { font-size:17px; line-height:1.8; color:#51483E; margin:0; }
+    .skills { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+    .skill { border:1px solid #D7CBB8; background:rgba(255,252,245,.7); padding:29px 25px 29px; min-height:210px; }
+    .letter { font:normal 38px/.95 Georgia,"Times New Roman",serif; color:var(--gold); margin:0 0 22px; }
+    .skill h3 { font-size:23px; letter-spacing:-.025em; margin:0 0 12px; }
+    .skill p { font-size:14px; line-height:1.72; margin:0; color:#51483F; }
+    .story { background:var(--paper); border-top:1px solid #E6DCCE; border-bottom:1px solid #E6DCCE; }
+    .story-grid { display:grid; grid-template-columns:minmax(260px,.8fr) minmax(0,1.1fr); align-items:center; gap:clamp(42px,8vw,110px); }
+    .story-art { aspect-ratio:1/1; display:grid; place-items:center; background:radial-gradient(circle at center, #F0E8D8 0 26%, transparent 27%),repeating-radial-gradient(circle at center, rgba(169,131,81,.42) 0 1px,transparent 1px 61px); border:1px solid #E1D6C3; position:relative; overflow:hidden; }
+    .story-art .love-glyph { font:italic 110px Georgia,"Times New Roman",serif; letter-spacing:-.08em; color:#A98351; opacity:.93; margin-left:-13px; }
+    .story-art::before,.story-art::after { content:"✧"; position:absolute; color:#A98351; font-size:23px; }
+    .story-art::before { top:17%; left:18%; }
+    .story-art::after { bottom:16%; right:16%; }
+    .story-copy .eyebrow { color:#78552F; }
+    .story-copy h2 { font-size:clamp(36px,4.5vw,53px); line-height:1.13; letter-spacing:-.04em; margin:17px 0 21px; }
+    .story-copy p { font-size:16px; line-height:1.85; color:#4D443A; margin:0 0 17px; }
+    .story-signature { color:#78552F !important; font-family:Georgia,"Times New Roman",serif; font-style:italic; font-size:22px !important; margin-top:23px !important; }
+    .final { background:var(--cream); text-align:center; padding-block:clamp(76px,9vw,118px); }
+    .final .eyebrow { color:#78552F; }
+    .final h2 { max-width:720px; font-size:clamp(37px,5vw,60px); letter-spacing:-.044em; line-height:1.14; margin:18px auto 20px; }
+    .final p { margin:0 auto 28px; color:#55473A; max-width:580px; font-size:16px; line-height:1.8; }
+    .solid-cta { display:inline-flex; align-items:center; justify-content:center; gap:18px; min-height:55px; padding:15px 24px; background:var(--night); color:var(--cream); text-decoration:none; font-size:13px; font-weight:800; letter-spacing:.02em; }
+    .solid-cta:hover { background:#33291F; }
+    .foot { background:var(--night); color:#CDBDA7; border-top:1px solid #302820; }
+    .foot-row { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding-block:27px; }
+    .foot p,.foot a { color:#CDBDA7; font-size:12px; line-height:1.7; text-decoration:none; margin:0; }
+    .foot a { text-decoration:underline; text-underline-offset:3px; }
+    @media(max-width:940px) {
+      .hero-grid { grid-template-columns:1fr; gap:48px; max-width:690px; }
+      .signup { width:100%; }
+      .skills { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .story-grid { grid-template-columns:.8fr 1.1fr; gap:30px; }
+      .story-art .love-glyph { font-size:77px; }
+    }
+    @media(max-width:660px) {
+      .shell { width:calc(100% - 40px); }
+      .nav { min-height:76px; }
+      .brand-mark { width:34px; height:34px; }
+      .nav-note { display:none; }
+      .hero-grid { padding-block:65px 86px; }
+      h1 { font-size:clamp(44px,10.9vw,63px); }
+      .lede { font-size:16px; }
+      .signup { padding:29px 24px; box-shadow:7px 7px 0 rgba(169,131,81,.13); }
+      .skills { grid-template-columns:1fr; gap:12px; }
+      .skill { min-height:0; padding:22px 22px; }
+      .letter { margin:0 0 10px; font-size:48px; }
+      .story-grid { grid-template-columns:1fr; gap:36px; }
+      .story-art { aspect-ratio:2 / 1; }
+      .story-art .love-glyph { font-size:82px; }
+      .section-head h2,.story-copy h2 { font-size:39px; }
+      .start-chip { align-items:start; flex-direction:column; gap:6px; }
+      .start-chip strong { text-align:left; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      .hero-cta svg { transition:none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="https://myorganicsoulution.com/" aria-label="My Organic Soulution home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" stroke="#A98351"/>
+          <path d="M20 7V33M7 20H33M10.5 10.5L29.5 29.5M29.5 10.5L10.5 29.5" stroke="#A98351" stroke-width=".83"/>
+          <circle cx="20" cy="20" r="3.5" fill="#A98351"/>
+        </svg>
+        <span>MY ORGANIC<br>SOULUTION</span>
+      </a>
+      <div class="nav-right">
+        <span class="nav-note">Free five-day experience</span>
+        <a class="nav-link" href="#signup">Join free <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="main-title">
+      <svg class="starfield" viewBox="0 0 430 320" fill="none" aria-hidden="true">
+        <g stroke="#A98351" stroke-width="1"><path d="M70 80h14M77 73v14M310 66h16M318 58v16M207 244h12M213 238v12"/><path d="M376 184h10M381 179v10M153 147h8M157 143v8"/></g>
+        <g fill="#D1B181"><circle cx="140" cy="54" r="1.6"/><circle cx="238" cy="121" r="1.4"/><circle cx="330" cy="253" r="1.6"/><circle cx="66" cy="242" r="1.3"/></g>
+      </svg>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow rule-label">The Courage to LOVE</div>
+          <h1 id="main-title">When talking to your daughter <em>feels harder than it used to.</em></h1>
+          <p class="lede">One-word answers. Eye rolls. Conversations that turn into arguments when all you wanted was to talk.</p>
+          <p class="lede">I'm a mom of a teenage daughter, too. And I know how frustrating that can feel.</p>
+          <p class="lede">Over the next five days, I'll share what I've learned about communicating with my daughter and why paying attention to my own reactions made a difference.</p>
+          <a class="hero-cta" href="#signup">Join the free email experience
+            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" aria-hidden="true"><path d="M1 8.5h17m-7-7 7 7-7 7" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a>
+          <p class="date-line"><span class="spark" aria-hidden="true">✧</span> Five short emails · December 1–5, 2026 · Free</p>
+        </div>
+
+        <section class="signup" id="signup" aria-labelledby="signup-title">
+          <p class="eyebrow signup-kicker">Start with one conversation</p>
+          <h2 id="signup-title">I'd love to have you join me.</h2>
+          <p class="signup-intro">You don't need the perfect words or another list of parenting rules. Just a little time each day to try something different.</p>
+          <div class="start-chip" aria-label="Course start date">
+            <span>Our first day</span><strong>Tuesday, December 1, 2026</strong>
+          </div>
+          <div class="signup-highlight" aria-label="Free signup and start date reminder">
+            <p><strong>Free to join.</strong> <span class="signup-deadline">Sign up before December 1</span> to receive the series from Day 1. You can unsubscribe anytime.</p>
+            <a class="signup-jump" href="#love-signup-form">Sign up here <span aria-hidden="true">↓</span></a>
+          </div>
+          <!-- LIVE KIT SIGNUP: Change fields, button text, and success/confirmation message in Kit.
+               Subscribers receive the daily lessons as scheduled group broadcasts on Kit Free. -->
+          <div class="kit-embed" id="love-signup-form" aria-label="Sign up for The Courage to LOVE free email experience">
+            <script async data-uid="64ba5e9b5c" src="https://kristin-carbone33.kit.com/64ba5e9b5c/index.js"></script>
+            <noscript>Enable JavaScript to see the Kit signup form.</noscript>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-title">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">A look inside the free email experience</p>
+          <h2 id="skills-title">Discover four ways to change the conversation—with LOVE.</h2>
+          <p>For five days, I'll share what has helped me when talking with my daughter gets difficult. We'll look at the moments that set us off, why our own reactions matter, and how astrology can give us another way to understand each other. You'll get something small to try each day.</p>
+        </div>
+        <div class="skills">
+          <article class="skill"><div class="letter" aria-hidden="true">01</div><h3>Five short emails</h3><p>A few minutes each day, starting December 1.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">02</div><h3>One thing to try</h3><p>A simple practice you can use in an everyday moment with your daughter.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">03</div><h3>A little astrology</h3><p>Another way to look at communication—and what happens when emotions run high.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" aria-labelledby="story-title">
+      <div class="shell story-grid">
+        <div class="story-art" aria-hidden="true"><span class="love-glyph">LOVE</span></div>
+        <div class="story-copy">
+          <p class="eyebrow">A note from Kristin</p>
+          <h2 id="story-title">I've had those hard conversations, too.</h2>
+          <p>My daughter used to tell me everything. Then, somewhere along the way, that changed. I felt frustrated, hurt, and honestly, I didn't know how to reach her anymore.</p>
+          <p>I started learning more about how teens think and communicate. Astrology gave me another way to understand what was going on. But I also started noticing something about myself—how I was reacting to her.</p>
+          <p>I still don't get every conversation right. But I've learned a few things that help, especially when we aren't seeing eye to eye. And I'd love to share them with you.</p>
+          <p class="story-signature">Blessings, Kristin</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <div class="shell">
+        <p class="eyebrow">The Courage to LOVE</p>
+        <h2 id="final-title">You don't have to change everything today.</h2>
+        <p>Come spend five days with me. One email and one small Courageous Practice each day, starting December 1.</p>
+        <a class="solid-cta" href="#signup">Join the free five-day experience <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="shell foot-row">
+      <p>© 2026 MY ORGANIC SOULUTION</p>
+      <p>Astrology · Mindset · Personal Growth</p>
+      <a href="https://myorganicsoulution.com/">Visit My Organic Soulution</a>
+    </div>
+  </footer>
+</body>
+</html>
