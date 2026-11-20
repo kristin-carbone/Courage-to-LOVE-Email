@@ -62,6 +62,8 @@
     .start-chip { border-block:1px solid #D2C6B4; padding:15px 0; margin-bottom:23px; display:flex; justify-content:space-between; align-items:center; gap:13px; }
     .start-chip span { text-transform:uppercase; font-size:10px; font-weight:800; letter-spacing:.15em; color:#76532E; }
     .start-chip strong { font-size:13px; font-weight:750; text-align:right; }
+    .bonus-note { margin:0 0 21px; color:#564838; font-size:13px; line-height:1.65; }
+    .bonus-note strong { color:#76532E; }
     .kit-embed { min-height:94px; }
     /* Kit generates the actual fields and submit button. Style its output; do not duplicate fields in this file. */
     .kit-embed .formkit-form { max-width:none !important; width:100% !important; min-width:0 !important; margin:0 !important; padding:0 !important; border:0 !important; background:transparent !important; box-shadow:none !important; color:var(--ink) !important; font-family:inherit !important; }
@@ -73,23 +75,17 @@
     .kit-embed button:hover,.kit-embed .formkit-submit:hover { background:#31271E !important; }
     .kit-embed button:focus-visible,.kit-embed input:focus-visible,.kit-embed .formkit-submit:focus-visible { outline:3px solid var(--gold) !important; outline-offset:3px !important; }
     .kit-embed .formkit-alert,.kit-embed .formkit-guarantee,.kit-embed .formkit-powered-by-convertkit-container { font-size:12px !important; line-height:1.55 !important; }
-    /* A small, high-contrast enrollment reminder and link to the real Kit form below. */
-    .signup-highlight { background:#EEE1CA; border-left:4px solid var(--gold); padding:17px 19px 16px; margin:0 0 24px; }
-    .signup-highlight p { margin:0; color:#403226; font-size:14px; line-height:1.65; }
-    .signup-highlight strong { font-weight:800; color:#2D2116; }
-    .signup-highlight .signup-deadline { font-weight:750; }
-    .signup-jump { display:inline-flex; align-items:center; gap:7px; margin-top:11px; color:#68471F; font-size:13px; font-weight:800; text-decoration:underline; text-decoration-color:var(--gold); text-underline-offset:4px; }
-    .signup-jump:hover { color:var(--black); }
-    #love-signup-form { scroll-margin-top:28px; }
+    .privacy { margin:18px 0 0; color:#675A4C; font-size:12px; line-height:1.7; }
+    .privacy strong { color:#4E3E2E; }
 
     .section { padding-block:clamp(74px,9vw,112px); }
     .section-head { max-width:760px; margin-bottom:40px; }
     .section-head .eyebrow { color:#78552F; margin:0 0 14px; }
     .section-head h2 { font-size:clamp(35px,4.6vw,55px); line-height:1.15; letter-spacing:-.038em; margin:0 0 18px; }
     .section-head p { font-size:17px; line-height:1.8; color:#51483E; margin:0; }
-    .skills { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
-    .skill { border:1px solid #D7CBB8; background:rgba(255,252,245,.7); padding:29px 25px 29px; min-height:210px; }
-    .letter { font:normal 38px/.95 Georgia,"Times New Roman",serif; color:var(--gold); margin:0 0 22px; }
+    .skills { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+    .skill { border:1px solid #D7CBB8; background:rgba(255,252,245,.7); padding:29px 23px 30px; min-height:245px; }
+    .letter { font:normal 55px/.95 Georgia,"Times New Roman",serif; color:var(--gold); margin:0 0 28px; }
     .skill h3 { font-size:23px; letter-spacing:-.025em; margin:0 0 12px; }
     .skill p { font-size:14px; line-height:1.72; margin:0; color:#51483F; }
     .story { background:var(--paper); border-top:1px solid #E6DCCE; border-bottom:1px solid #E6DCCE; }
@@ -174,8 +170,7 @@
           <div class="eyebrow rule-label">The Courage to LOVE</div>
           <h1 id="main-title">When talking to your daughter <em>feels harder than it used to.</em></h1>
           <p class="lede">One-word answers. Eye rolls. Conversations that turn into arguments when all you wanted was to talk.</p>
-          <p class="lede">I'm a mom of a teenage daughter, too. And I know how frustrating that can feel.</p>
-          <p class="lede">Over the next five days, I'll share what I've learned about communicating with my daughter and why paying attention to my own reactions made a difference.</p>
+          <p class="lede">I'm a mom of a teenage daughter, too. Over five days, I'll share a few things that helped me understand her—and my own reactions—a little better.</p>
           <a class="hero-cta" href="#signup">Join the free email experience
             <svg width="20" height="17" viewBox="0 0 20 17" fill="none" aria-hidden="true"><path d="M1 8.5h17m-7-7 7 7-7 7" stroke="currentColor" stroke-width="1.4"/></svg>
           </a>
@@ -189,16 +184,14 @@
           <div class="start-chip" aria-label="Course start date">
             <span>Our first day</span><strong>Tuesday, December 1, 2026</strong>
           </div>
-          <div class="signup-highlight" aria-label="Free signup and start date reminder">
-            <p><strong>Free to join.</strong> <span class="signup-deadline">Sign up before December 1</span> to receive the series from Day 1. You can unsubscribe anytime.</p>
-            <a class="signup-jump" href="#love-signup-form">Sign up here <span aria-hidden="true">↓</span></a>
-          </div>
+          <p class="bonus-note"><strong>Early-registration gift:</strong> Join by November 29 and receive my free <em>Finding Your Teen’s Mercury Sign</em> guide to explore your daughter’s communication style before we begin.</p>
           <!-- LIVE KIT SIGNUP: Change fields, button text, and success/confirmation message in Kit.
                Subscribers receive the daily lessons as scheduled group broadcasts on Kit Free. -->
-          <div class="kit-embed" id="love-signup-form" aria-label="Sign up for The Courage to LOVE free email experience">
+          <div class="kit-embed" aria-label="Sign up for The Courage to LOVE free email experience">
             <script async data-uid="64ba5e9b5c" src="https://kristin-carbone33.kit.com/64ba5e9b5c/index.js"></script>
             <noscript>Enable JavaScript to see the Kit signup form.</noscript>
           </div>
+          <p class="privacy"><strong>Free to join.</strong> Sign up before December 1 to receive the series from Day 1. You can unsubscribe anytime.</p>
         </section>
       </div>
     </section>
@@ -206,14 +199,15 @@
     <section class="section" aria-labelledby="skills-title">
       <div class="shell">
         <div class="section-head">
-          <p class="eyebrow">A look inside the free email experience</p>
-          <h2 id="skills-title">Discover four ways to change the conversation—with LOVE.</h2>
-          <p>For five days, I'll share what has helped me when talking with my daughter gets difficult. We'll look at the moments that set us off, why our own reactions matter, and how astrology can give us another way to understand each other. You'll get something small to try each day.</p>
+          <p class="eyebrow">What we'll practice</p>
+          <h2 id="skills-title">Four ways to change the conversation.</h2>
+          <p>Each day, we'll focus on one simple idea you can use when talking with your daughter. We'll also look at how astrology can give us another perspective on the way we communicate and respond.</p>
         </div>
         <div class="skills">
-          <article class="skill"><div class="letter" aria-hidden="true">01</div><h3>Five short emails</h3><p>A few minutes each day, starting December 1.</p></article>
-          <article class="skill"><div class="letter" aria-hidden="true">02</div><h3>One thing to try</h3><p>A simple practice you can use in an everyday moment with your daughter.</p></article>
-          <article class="skill"><div class="letter" aria-hidden="true">03</div><h3>A little astrology</h3><p>Another way to look at communication—and what happens when emotions run high.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">L</div><h3>Listen</h3><p>Hear what she's saying without rushing to correct or solve it.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">O</div><h3>Observe</h3><p>Notice what happened before deciding what her behavior means.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">V</div><h3>Validate</h3><p>Acknowledge her feelings while keeping your boundaries.</p></article>
+          <article class="skill"><div class="letter" aria-hidden="true">E</div><h3>Empathize</h3><p>Care about her feelings without having to fix them or take them on.</p></article>
         </div>
       </div>
     </section>
@@ -224,9 +218,9 @@
         <div class="story-copy">
           <p class="eyebrow">A note from Kristin</p>
           <h2 id="story-title">I've had those hard conversations, too.</h2>
-          <p>My daughter used to tell me everything. Then, somewhere along the way, that changed. I felt frustrated, hurt, and honestly, I didn't know how to reach her anymore.</p>
-          <p>I started learning more about how teens think and communicate. Astrology gave me another way to understand what was going on. But I also started noticing something about myself—how I was reacting to her.</p>
-          <p>I still don't get every conversation right. But I've learned a few things that help, especially when we aren't seeing eye to eye. And I'd love to share them with you.</p>
+          <p>There was a time when my daughter, who used to tell me everything, felt so hard to reach. I felt frustrated, hurt, and unsure what to do.</p>
+          <p>Learning about teen development, communication, and astrology helped me start seeing things differently. I also had to take a look at my own reactions.</p>
+          <p>This is what I want to share with you. Not a way to get every conversation right, but a few things you can come back to when talking feels hard.</p>
           <p class="story-signature">Blessings, Kristin</p>
         </div>
       </div>
